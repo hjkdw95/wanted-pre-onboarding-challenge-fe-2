@@ -1,15 +1,4 @@
-import { TodoItem } from './Todo.spec'
-
-type ColumnType = 'contents' | 'completed' | 'category'
-
-interface TodoType {
-  create: (todo: TodoItem) => void
-  read: (id?: number) => TodoItem[] | TodoItem
-  update: (id: number, type: ColumnType, newValue: string | boolean) => void
-  updateTag: (id: number, tagId: number, newValue: string) => void
-  delete: (id?: number) => void
-  deleteTag: (id: number, tagId?: number) => void
-}
+import { TodoItem, TodoType } from './Todo.spec'
 
 class TodoController implements TodoType {
   create(todo: TodoItem) {}
