@@ -20,4 +20,4 @@ export interface TodoType {
   deleteTag: (id: number, tagId?: number) => void
 }
 
-type ColumnType = 'contents' | 'completed' | 'category'
+export type ColumnType = 'contents' | 'completed' | 'category'
